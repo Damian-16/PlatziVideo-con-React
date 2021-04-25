@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../assets/styles/components/CarouselItem.scss';
 import playIcon from '../assets/static/play-icon.png';
 import plusIcon from "../assets/static/plus-icon.png";
@@ -21,6 +22,15 @@ const CarouselItem=({cover,title,year,contentRating,duration})=>(
       </div>
           )
 
+
+          CarouselItem.propTypes = {
+            cover: PropTypes.string,
+            title:PropTypes.string,
+            year:PropTypes.number,
+            contentRating:PropTypes.string,
+            duration:PropTypes.number,
+          }
+          //aca declaramos que tipo de dato nos va a llegar por cada elemento que nos regresa el API
           export default CarouselItem;
           // esto se cambia por el parametro cover que regresara dela api src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260"
           //2019 16+ 114 minutos este parrafo se transforma en las variables year etc..
