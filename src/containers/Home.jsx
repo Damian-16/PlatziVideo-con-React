@@ -13,7 +13,7 @@ import '../assets/styles/App.scss';
 const API = 'http://localhost:3000/initialState';
 
 
-const App = () => {
+const Home = () => {
     //al llamar a useState y useEffect encapsulo todo en {} y es return quien llama lo que devolvera
    
    const initialState = useInitialState(API);
@@ -30,7 +30,7 @@ const App = () => {
     // console.log(videos)
     
     return initialState.length === 0? <h1>Loading ...</h1>: (
-    <div className="App">
+    <div className="Home">
 
      <Header/>
      <Search/>
@@ -66,4 +66,4 @@ const App = () => {
       )
 }
 
-export default App;
+export default Home;

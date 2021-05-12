@@ -58,7 +58,9 @@ module.exports ={
             }
         ]
     },
-
+    devServer:{
+        historyApiFallback:true,//me permite manejar la historia y el manejko del movimiento del navegador en cada uno de los elementos
+    },
 
     plugins:[
         new HtmlWebPackPlugin({
