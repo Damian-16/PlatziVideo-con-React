@@ -59,6 +59,7 @@ module.exports ={
         ]
     },
     devServer:{
+        // contentBase:path.join(__dirname,"dist"),
         historyApiFallback:true,//me permite manejar la historia y el manejko del movimiento del navegador en cada uno de los elementos
     },
 
