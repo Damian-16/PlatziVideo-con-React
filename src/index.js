@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloWorld from './components/HelloWorld';
-import Header from './components/Header';
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
 import App from './routes/App';
 
 // ReactDOM.render(<HelloWorld/>,document.getElementById('app'));
@@ -11,4 +11,6 @@ import App from './routes/App';
 
 
 
-ReactDOM.render(<App/>,document.getElementById('app'));
+ReactDOM.render(
+
+<Provider><App/></Provider>,document.getElementById('app'));
