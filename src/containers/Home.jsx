@@ -30,9 +30,9 @@ const Home = () => {
     // console.log(videos)
     
     return initialState.length === 0? <h1>Loading ...</h1>: (
-    <div className="Home">
+    <>
 
-     <Header/>
+   
      <Search/>
 
           { initialState.mylist.length >  0 &&    
@@ -60,9 +60,9 @@ const Home = () => {
             
          </Carousel>
      </Categories>
-     <Footer/>
-
-    </div>
+    
+      {/* se borro header y footer y volvemos un fragment el div de classnName "Home", que es el mismo de App */}
+    </>
       )
 }
 

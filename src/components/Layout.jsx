@@ -13,3 +13,5 @@ const Layout = ({children}) => (
 )
 
 export default Layout;
+
+//esto sirve para mantener la continuidad de un componente en navegacion, en este caso Header y Footer
