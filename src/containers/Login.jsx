@@ -23,8 +23,8 @@ const Login = props => {
   const handleSubmit = event =>{
     event.preventDefault();
     console.log(form);
-    props.loginRequest(form);
-    props.history.push('/');
+    props.loginRequest(form);//de esta manera voy a enviar el estado que creamos (form) que es la informacion capturada del formulario
+    props.history.push('/');// nos mandara ala raíz,history funciona porque todo esto esta encapsulado en browser-router
   }
   return (
               <section className="login">
